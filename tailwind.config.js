@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './components/**/*.{vue,js,ts}',
+    './layouts/**/*.{vue,js,ts}',
+    './pages/**/*.{vue,js,ts}',
+    './app.vue',
+  ],
+  theme: {
+    container: {
+      padding: {
+        DEFAULT: '1rem',       // 640px dan katta ekranlar uchun
+      },
+      screens: {
+        DEFAULT: '100%', // width: 100%
+        xl: '1691px',     // max-width: 1659px dan oshmasin
+      },
+    },
+    extend: {
+      screens: {
+        '3xl': '1920px',
+      },
+      colors: {
+        custom: {
+          DEFAULT: '#004741',
+          100: '#085F58',
+          200: '#15614B',
+          300: '#194F4A',
+          400: '#105953',
+        },
+        dark: {
+          DEFAULT: '#191D1D',
+          100: '#000',
+          200: '#1E293B',
+        },
+        gray: {
+          100: '#F2F2F2',
+          200: '#E2E8F0',
+          300: '#334155',
+          400: '#F9F9F9',
+          500: '#F1F5F9',
+          600: '#F3F3F3',
+        },
+      },
+      fontFamily: {
+        'alumni': ['Alumni', 'sans-serif'],
+        'golos': ['Golos', 'sans-serif'],
+      },
+      fontSize: {
+        20: '20px',
+        32: '32px',
+        48: '48px',
+        56: '56px',
+        64: '64px',
+        96: '96px',
+      },
+      lineHeight: {
+        110: '110%',
+        130: '130%',
+        150: '150%',
+        104: '104%',
+      },
+      backgroundImage: {
+        'about-banner-gr': 'linear-gradient(180deg, rgba(126, 180, 221, 0.32) -19.19%, rgba(0, 0, 0, 0.32) 77.04%)',
+        'main-banner-gr': 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) -231.1%, rgba(0, 0, 0, 0.24) 124.2%)',
+        'engineer-banner-gr': 'linear-gradient(180deg, #000 -19.19%, rgba(0, 0, 0, 0.00) 50.87%, #000 120.7%)',
+        'procurement-banner-gr': 'linear-gradient(180deg, #000 -19.19%, rgba(0, 0, 0, 0.00) 50.87%, #000 106.71%)',
+      },
+    },
+  },
+  plugins: [],
+};
+

@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    /* Alumni */
+    @font-face {
+        font-family: 'Alumni';
+        src: url('/fonts/Alumni_Sans/AlumniSans-Regular.ttf') format('truetype');
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: 'Alumni';
+        src: url('/fonts/Alumni_Sans/AlumniSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: 'Alumni';
+        src: url('/fonts/Alumni_Sans/AlumniSans-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+    }
+
+    @font-face {
+        font-family: 'Alumni';
+        src: url('/fonts/Alumni_Sans/AlumniSans-Bold.ttf') format('truetype');
+        font-weight: 700;
+    }
+
+    /* Golos */
+    @font-face {
+        font-family: 'Golos';
+        src: url('/fonts/Golos_Text/GolosText-Regular.ttf') format('truetype');
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: 'Golos';
+        src: url('/fonts/Golos_Text/GolosText-Medium.ttf') format('truetype');
+        font-weight: 500;
+    }
+
+    p {
+        @apply font-golos 3xl:text-[20px] xl:text-[18px] lg:text-[16px] text-[14px] leading-[150%] font-normal text-dark;
+    }
+    
+    h2 {
+        @apply font-alumni 2xl:text-[56px] lg:text-[50px] text-[46px] leading-[130%] font-normal text-dark;
+    }
+
+    .container {
+        @apply max-lg:p-0;
+    }
+
+    
+}
+
+@media screen and (mix-width: 992px) {
+    
+    .container {
+        padding: 0;       
+    }
+}
