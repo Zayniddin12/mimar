@@ -119,6 +119,13 @@ onMounted(() => {
     loading.value = false;
   }, 3000);
 });
+useSeoMeta({
+  title: 'MIMAR',
+  ogTitle: 'OUR EXPERIENCE IS YOUR SUCCESS',
+  twitterTitle: 'OUR EXPERIENCE IS YOUR SUCCESS',
+  ogImage: '/logo.jpg',
+  twitterImage: '/logo.jpg',
+});
 </script>
 <style>
 .swiper .swiper-pagination-bullets {

@@ -1,8 +1,22 @@
 <template>
   <section>
     <div class="w-full md:h-screen h-[400px] relative">
-      <div class="absolute top-0 left-0 w-full h-full z-0">
-        <img :src="image" alt="Banner inmage" :class="imageStyle" class="md:h-screen h-[400px] min-w-full object-cover">
+      <div :class="{'bg-custom' :mimar}" class="absolute top-0 left-0 w-full h-full z-0 ">
+        <img
+          v-if="!mimar" :src="image" alt="Banner inmage" :class="imageStyle"
+          class="md:h-screen h-[400px] min-w-full object-cover">
+        <video
+          v-if="mimar"
+          :src="image"
+          autoplay
+          loop
+          muted
+          playsinline
+          style="mix-blend-mode: color-dodge;
+          filter: invert(1);"
+          :class="imageStyle"
+          class="md:h-screen h-[400px] min-w-full object-cover"
+        />
         <img
           v-if="mimar" src="/images/mimar.svg" class="absolute aspect-video w-[70%] h-full z-0 -top-0 right-20"
           alt="mimar">

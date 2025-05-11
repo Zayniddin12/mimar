@@ -31,13 +31,13 @@
 
             <form @submit.prevent="onSubmit">
               <div class="mt-[24px]">
-                <div class="grid grid-cols-2 gap-[16px] w-full">
+                <div class="grid sm:grid-cols-2 gap-[16px] w-full">
                   <input
-v-if="t('navbar.full_name') !== 'navbar.full_name'" v-model="formData.name" type="text"
-                         :placeholder="namePlaceholder">
+                    v-if="t('navbar.full_name') !== 'navbar.full_name'" v-model="formData.name" type="text"
+                    :placeholder="namePlaceholder">
                   <input
-v-if="t('navbar.email') !== 'navbar.email'" v-model="formData.email" type="text"
-                         :placeholder="emailPlaceholder">
+                    v-if="t('navbar.email') !== 'navbar.email'" v-model="formData.email" type="text"
+                    :placeholder="emailPlaceholder">
                 </div>
                 <div class="mt-[24px]">
                   <textarea

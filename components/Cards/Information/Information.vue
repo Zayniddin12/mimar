@@ -1,9 +1,19 @@
 <template>
   <div class="bg-custom md:py-[120px] py-6 relative">
-    <img
-      :src="image ?? '/images/decoration.svg'" alt="decoration"
+    <video
+      :src="image"
+      autoplay
+      loop
+      muted
+      playsinline
+      style="mix-blend-mode: color-dodge;     filter: invert(1);"
       :class="imageClass"
-      class="absolute right-0 min-size-full top-0">
+      class="w-full h-full object-cover absolute top-0 left-0 z-0"
+    />
+    <!--    <img-->
+    <!--      :src="image ?? '/images/decoration.svg'" alt="decoration"-->
+    <!--      :class="imageClass"-->
+    <!--      class="absolute right-0 min-size-full top-0">-->
 
     <div class="flex-center flex-col gap-6  max-w-[816px] w-full mx-auto container">
       <div

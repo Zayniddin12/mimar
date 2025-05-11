@@ -6,7 +6,7 @@
         to="/"
         class="flex items-center gap-[14px]  font-medium leading-normal text-sm transition-300  group"
       >
-        <p class="text-white text-20 font-normal leading-120">{{ $t('main') }}</p>
+        <p class="text-white text-20 font-normal leading-120">{{ $t('navbar.home') }}</p>
       </NuxtLink>
       <div
         v-for="(item, index) in breadcrumb"

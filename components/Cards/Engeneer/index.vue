@@ -4,20 +4,21 @@
     <div class="container relative">
       <CardsInformationEngeneer
         :id="id"
-        :title="engineers?.[0]?.title"
-        :description="engineers?.[0]?.description"
+        :title="title"
+        :description="description"
         :class="cardStyle"
         class="sm:absolute md:-bottom-[72px] -bottom-2 z-10 md:w-fit w-full" />
     </div>
   </div>
 </template>
 <script setup lang="ts">
-import { engineers } from '~/data/offer';
 
 interface IProps {
   id?: number;
   images: string;
   cardStyle?: string;
+  title: string;
+  description: string;
 }
 
 defineProps<IProps>();

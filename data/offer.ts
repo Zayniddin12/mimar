@@ -78,75 +78,136 @@ export const projects = [
 export const engineers = [
   {
     id: 1,
-    images: '/images/esg2.png',
-    title: 'Early phase engineering',
-    description: 'From the planning and development of new facilities to the evaluation, enhancement, or decommissioning of existing infrastructure, our goal is to define optimal logistical and commercial project parameters that drive production, improve performance, and meet regulatory and business requirements. Our early-phase engineering services includeFeasibility studies, concept selection, and Pre-FEEDInitial budget and schedule estimatesTechnology and site selectionPermitting support',
+    images: '/images/enginer1.png',
+    title: 'navbar.Early',
+    description: 'navbar.Early_subtittle',
   },
   {
-    images: '/images/banner.webp',
-    title: 'Early phase engineering',
-    description: 'From the planning and development of new facilities to the evaluation, enhancement, or decommissioning of existing infrastructure, our goal is to define optimal logistical and commercial project parameters that drive production, improve performance, and meet regulatory and business requirements. Our early-phase engineering services includeFeasibility studies, concept selection, and Pre-FEEDInitial budget and schedule estimatesTechnology and site selectionPermitting support',
+    images: '/images/enginer2.png',
+    title: 'navbar.Front-End',
+    description: 'navbar.Front-End_subtittle',
   },
   {
-    images: '/images/construction.png',
-    title: 'Early phase engineering',
-    description: 'From the planning and development of new facilities to the evaluation, enhancement, or decommissioning of existing infrastructure, our goal is to define optimal logistical and commercial project parameters that drive production, improve performance, and meet regulatory and business requirements. Our early-phase engineering services includeFeasibility studies, concept selection, and Pre-FEEDInitial budget and schedule estimatesTechnology and site selectionPermitting support',
+    images: '/images/enginer3.png',
+    title: 'navbar.Detailed',
+    description: 'navbar.Detailed_subtittle',
   },
+];
+export const procurement = [
+  {
+    id: 1,
+    images: '/images/procurement1.png',
+    title: 'navbar.Supplier',
+    description: 'navbar.Supplier_subtittle',
+  },
+  {
+    images: '/images/procurement2.png',
+    title: 'navbar.Cost',
+    description: 'navbar.Cost_subtittle',
+  },
+
+];
+
+export const constructions = [
+  {
+    id: 1,
+    images: '/images/construction2.png',
+    title: 'navbar.Project',
+    description: 'navbar.Project_subtittle',
+  },
+  {
+    images: '/images/construction2.png',
+    title: 'navbar.Commissioning',
+    description: 'navbar.Commissioning_subtittle',
+  },
+
 ];
 
 export const expertises = [
   {
     id: 1,
-    title: 'Non-Ferrous Metals Recovery',
-    description: 'To create innovative and reliable projects that transform cities, improve the quality of life, and leave a legacy for future generations.',
-    image: '/images/banner.webp',
+    title: 'navbar.Non-Ferrous',
+    description: 'navbar.Non-Ferrous_subtittle',
+    image: '/images/expertise1.png',
   },
   {
     id: 2,
-    title: 'Construction and Civil Works:',
-    description: 'To create innovative and reliable projects that transform cities, improve the quality of life, and leave a legacy for future generations.',
-    image: '/images/kara.png',
+    title: 'navbar.Construction',
+    description: 'navbar.Construction_subtittle',
+    image: '/images/expertise2.png',
   },
   {
     id: 3,
-    title: 'Refineries',
-    description: 'To create innovative and reliable projects that transform cities, improve the quality of life, and leave a legacy for future generations.',
-    image: '/images/enginering.png',
+    title: 'navbar.Refineries',
+    description: 'navbar.Refineries_subtittle',
+    image: '/images/expertise3.png',
   },
   {
     id: 4,
-    title: 'Non-Ferrous Metals Recovery',
-    description: 'To create innovative and reliable projects that transform cities, improve the quality of life, and leave a legacy for future generations.',
-    image: '/images/banner.webp',
+    title: 'navbar.Cement',
+    description: 'navbar.Cement_subtittle',
+    image: '/images/expertise4.png',
   },
   {
     id: 5,
-    title: 'Construction and Civil Works:',
-    description: 'To create innovative and reliable projects that transform cities, improve the quality of life, and leave a legacy for future generations.',
-    image: '/images/kara.png',
+    title: 'navbar.Power',
+    description: 'navbar.Power_subtittle',
+    image: '/images/expertise5.png',
   },
   {
     id: 6,
-    title: 'Refineries',
-    description: 'To create innovative and reliable projects that transform cities, improve the quality of life, and leave a legacy for future generations.',
-    image: '/images/enginering.png',
+    title: 'navbar.Process',
+    description: 'navbar.Process_subtittle',
+    image: '/images/expertise6.png',
   },
 
+];
+export const esg = [
+  {
+    id: 1,
+    title: 'navbar.Energy',
+    description: 'navbar.Energy_subtittle',
+    image: '/images/esgp2.png',
+  },
+  {
+    id: 2,
+    title: 'navbar.Job',
+    description: 'navbar.Job_subtittle',
+    image: '/images/esgp3.png',
+  },
+  {
+    id: 3,
+    title: 'navbar.Solar',
+    description: 'navbar.Solar_subtittle',
+    image: '/images/esgp4.png',
+  },
+  {
+    id: 4,
+    title: 'navbar.Shahidlar',
+    description: 'navbar.Shahidlar_subtittle',
+    image: '/images/esgp5.png',
+  },
+  {
+    id: 5,
+    title: 'navbar.Pesticide',
+    description: 'navbar.Pesticide_subtittle',
+    image: '/images/esgp6.png',
+  },
 ];
 export const esgList = [
   {
     id: 1,
-    title: 'Environmental Responsibility',
-    description: 'We focus on reducing our environmental impact by using sustainable materials, optimizing energy use, and promoting resource recycling, especially in areas like Non-Ferrous Metals Recovery.',
+    title: 'navbar.Environmental',
+    description: 'navbar.Environmental_subtittle',
   },
   {
     id: 2,
-    title: 'Social Responsibility',
-    description: 'We engage with local communities, create job opportunities, and ensure a safe working environment, contributing positively to society.',
+    title: 'navbar.Social',
+    description: 'navbar.Social_subtittle',
   },
   {
     id: 3,
-    title: 'Governance',
+    title: 'navbar.Governance',
     description: 'Our commitment to ethical business practices, transparency, and compliance with all regulations ensures that we build trust with stakeholders and deliver on our promises.',
   },
 

@@ -1,12 +1,20 @@
 <template>
   <div>
-    <SectionsBanner :image="'images/engeneer.png'" gradient="engineer-banner-gr">
-      <BaseBreadCrumb :breadcrumb="breadcrumbRoutes" :title="$t('engineering')" />
+    <SectionsBanner :image="'/images/engeneer.png'" gradient="engineer-banner-gr">
+      <BaseBreadCrumb :breadcrumb="breadcrumbRoutes" :title="$t('navbar.engineering')" />
     </SectionsBanner>
-    <CardsInformation :text="$t('information1')" class="md:my-[104px] my-6" />
-    <CardsEngeneer :images="engineers?.[0]?.images" card-style="left-0" />
-    <CardsEngeneer :images="engineers?.[1]?.images" card-style="right-0" />
-    <CardsEngeneer :images="engineers?.[2]?.images" card-style="left-0" />
+    <CardsInformation
+      :text="$t('navbar.information1')" image="/images/gif2.mp4"
+      class="md:my-[104px] my-6" />
+    <CardsEngeneer
+      :images="engineers?.[0]?.images" card-style="left-0" :title="engineers?.[0]?.title"
+      :description="engineers?.[0]?.description" />
+    <CardsEngeneer
+:images="engineers?.[1]?.images" :title="engineers?.[1]?.title"
+                   :description="engineers?.[1]?.description" card-style="right-0" />
+    <CardsEngeneer
+:images="engineers?.[2]?.images" :title="engineers?.[2]?.title"
+                   :description="engineers?.[2]?.description" card-style="left-0" />
   </div>
 </template>
 <script setup lang="ts">
@@ -17,7 +25,7 @@ const { t } = useI18n();
 
 const breadcrumbRoutes = ref([
   {
-    title: t('engineering'),
+    title: t('navbar.engineering'),
     link: '/events',
   },
 ]);

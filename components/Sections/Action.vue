@@ -2,7 +2,7 @@
   <div>
     <p
       class="min-[1600px]:text-64 min-[1200px]:text-48 text-3xl text-dark leading-130 font-normal mb-14 mt-[128px] text-center">
-      {{ $t('action_title') }}
+      {{ $t('navbar.esg_action_title') }}
     </p>
     <div v-if="!isSmallScreen" class="space-y-2">
       <div
@@ -24,7 +24,7 @@
     </div>
     <div v-else class="grid sm:grid-cols-2 grid-cols-1">
       <CardsEsgAction
-        v-for="(item, i) in expertises"
+        v-for="(item, i) in esg"
         :key="i"
         :title="item.title"
         :image="item.image"
@@ -34,7 +34,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { expertises } from '~/data/offer';
+import { esg } from '~/data/offer';
 import { useWindowSize } from '@vueuse/core';
 
 const { width } = useWindowSize();
@@ -47,9 +47,9 @@ const chunkedRows = computed(() => {
   let i = 0;
   let isOdd = true;
 
-  while (i < expertises.length) {
+  while (i < esg.length) {
     const size = isOdd ? 3 : 2;
-    rows.push(expertises.slice(i, i + size));
+    rows.push(esg.slice(i, i + size));
     i += size;
     isOdd = !isOdd;
   }
