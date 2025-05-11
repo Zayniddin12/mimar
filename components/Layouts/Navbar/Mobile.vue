@@ -3,16 +3,17 @@
     class="w-full absolute top-0 left-0 h-screen z-50 flex flex-col justify-between transition-all duration-300 bg-white pl-4"
   >
     <div>
-      <div class="py-4 flex items-center justify-end pr-10">
+      <div class="py-4 flex items-center justify-between pr-10">
+        <NuxtLink to="/">
+          <img
+            loading="lazy"
+            alt="logo"
+            class="w-[92px] h-10 md:w-[119px] md:h-[52px] relative z-10"
+            src="/logo.svg"
+          >
+        </NuxtLink>
         <div class="flex items-center gap-x-3">
-          <NuxtLink to="/">
-            <img
-              loading="lazy"
-              alt="logo"
-              class="w-[92px] h-10 md:w-[119px] md:h-[52px] relative z-10"
-              src="/icons/logo.png"
-            >
-          </NuxtLink>
+
           <div @click="$emit('closeMobileHeader')">
             <i-close class="icon-close text-primary cursor-pointer text-[28px]" />
           </div>
@@ -116,7 +117,7 @@ const close = () => {
 
 <style scoped>
 .router-link-active {
-  color: #0067ff;
+  color: #085F58;
 }
 
 .from-left-enter-active {
