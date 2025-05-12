@@ -5,7 +5,7 @@
 
       <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-2">
         <div
-          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-white flex flex-col justify-between">
+          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-white flex flex-col justify-between transition-300 hover:-translate-y-1 hover:shadow-md">
           <div class="flex justify-between">
             <img src="/icons/card-icon.png" class="lg:h-5 h-[18px]" alt="Icon">
 
@@ -18,7 +18,7 @@
         </div>
 
         <div
-          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-custom flex flex-col justify-between">
+          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-custom flex flex-col justify-between  transition-300 hover:-translate-y-1 hover:shadow-md">
           <div class="flex justify-between">
             <img src="/icons/card-icon2.png" class="lg:h-5 h-[18px]" alt="Icon">
 
@@ -30,7 +30,7 @@
           </div>
         </div>
         <div
-          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-white flex flex-col justify-between">
+          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-white flex flex-col justify-between  transition-300 hover:-translate-y-1 hover:shadow-md">
           <div class="flex justify-between">
             <img src="/icons/card-icon.png" class="lg:h-5 h-[18px]" alt="Icon">
 
@@ -43,7 +43,7 @@
         </div>
 
         <div
-          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-custom flex flex-col justify-between">
+          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-custom flex flex-col justify-between  transition-300 hover:-translate-y-1 hover:shadow-md">
           <div class="flex justify-between">
             <img src="/icons/card-icon2.png" class="lg:h-5 h-[18px]" alt="Icon">
 
@@ -55,7 +55,7 @@
           </div>
         </div>
         <div
-          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-white flex flex-col justify-between">
+          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-white flex flex-col justify-between transition-300 hover:-translate-y-1 hover:shadow-md">
           <div class="flex justify-between">
             <img src="/icons/card-icon.png" class="lg:h-5 h-[18px]" alt="Icon">
 
@@ -68,7 +68,7 @@
         </div>
 
         <div
-          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-custom flex flex-col justify-between">
+          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-custom flex flex-col justify-between  transition-300 hover:-translate-y-1 hover:shadow-md">
           <div class="flex justify-between">
             <img src="/icons/card-icon2.png" class="lg:h-5 h-[18px]" alt="Icon">
 
@@ -80,7 +80,7 @@
           </div>
         </div>
         <div
-          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-white flex flex-col justify-between">
+          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-white flex flex-col justify-between  transition-300 hover:-translate-y-1 hover:shadow-md">
           <div class="flex justify-between">
             <img src="/icons/card-icon.png" class="lg:h-5 h-[18px]" alt="Icon">
 
@@ -93,7 +93,7 @@
         </div>
 
         <div
-          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-custom flex flex-col justify-between">
+          class="cursor-pointer p-6 min-h-[184px] mt-4 border border-[#E2E8F0] bg-custom flex flex-col justify-between  transition-300 hover:-translate-y-1 hover:shadow-md">
           <div class="flex justify-between">
             <img src="/icons/card-icon2.png" class="lg:h-5 h-[18px]" alt="Icon">
 

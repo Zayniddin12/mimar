@@ -7,7 +7,7 @@
       <div class="grid lg:grid-cols-3 md:grid-cols-1 gap-2">
         <NuxtLinkLocale
           to="/enginers"
-          class="2xl:min-h-[595px] lg:min-h-[432px] min-h-[400px] h-full bg-custom relative group cursor-pointer transition-300">
+          class="2xl:min-h-[595px] lg:min-h-[432px] min-h-[400px] h-full bg-custom relative group cursor-pointer transition-300 hover:opacity-80">
           <div class="absolute top-0 left-0 w-full h-full z-0">
             <img src="/images/do1.png" alt="ESG" class="w-full h-full object-cover">
           </div>
@@ -28,7 +28,7 @@
 
         <NuxtLinkLocale
           to="/procurement"
-          class="2xl:min-h-[595px] lg:min-h-[432px] min-h-[400px] h-full bg-custom relative group cursor-pointer transition-300">
+          class="2xl:min-h-[595px] lg:min-h-[432px] min-h-[400px] h-full bg-custom relative group cursor-pointer transition-300 hover:opacity-80">
           <div class="absolute top-0 left-0 w-full h-full z-0">
             <img src="/images/do2.png" alt="ESG" class="w-full h-full object-cover">
           </div>
@@ -49,7 +49,7 @@
 
         <NuxtLinkLocale
           to="/construction"
-          class="2xl:min-h-[595px] lg:min-h-[432px] min-h-[400px] h-full bg-custom relative group cursor-pointer transition-300">
+          class="2xl:min-h-[595px] lg:min-h-[432px] min-h-[400px] h-full bg-custom relative group cursor-pointer transition-300 hover:opacity-80">
           <div class="absolute top-0 left-0 w-full h-full z-0">
             <img src="/images/do3.png" alt="ESG" class="w-full h-full object-cover">
           </div>

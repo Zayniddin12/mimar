@@ -73,6 +73,7 @@ import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import type { IBanners, IResponse } from '~/types';
 
+
 const loading = ref(true);
 const banners = ref();
 const settings = {
@@ -88,6 +89,7 @@ const settings = {
     delay: 5000,
   },
 };
+
 
 function fetchProjects() {
   return new Promise((resolve, reject) => {

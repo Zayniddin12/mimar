@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section ref="counterRef">
     <div class="container">
       <div class="grid md:grid-cols-5 gap-2">
         <div class="md:col-span-2">
@@ -20,7 +20,7 @@
       >
         <img src="/images/AboutUs.png" class="absolute size-full top-0 left-0 object-cover">
         <div class="h-full flex items-end 2xl:p-10 lg:p-5 p-4">
-          <SectionsStatistics />
+          <SectionsStatistics :is-visible="isVisible" />
         </div>
       </div>
     </div>
@@ -35,6 +35,26 @@ interface Props {
 }
 
 defineProps<Props>();
+const isVisible = ref(false);
+const counterRef = ref<HTMLElement | null>(null);
+let observer: IntersectionObserver | null = null;
+
+const handleIntersect = (entries: IntersectionObserverEntry[]) => {
+  if (entries[0].isIntersecting) {
+    isVisible.value = true;
+    if (observer) {
+      observer.disconnect();
+    }
+  }
+};
+
+
+onMounted(() => {
+  observer = new IntersectionObserver(handleIntersect);
+  if (counterRef.value) {
+    observer.observe(counterRef.value);
+  }
+});
 </script>
 
 <style scoped>

@@ -2,9 +2,9 @@
   <div>
     <SectionsBanner
       class="bg-custom relative"
-      :image="'images/dec4.svg'" image-style="!right-0 top-0 absolute z-[5]"
+      :image="'/images/gif6.mp4'" image-style="!right-0 top-0 absolute z-[5]"
       :mimar="true">
-      <BaseBreadCrumb :breadcrumb="breadcrumbRoutes" :title="$t('mimar_projects')" class="relative z-10" />
+      <BaseBreadCrumb :breadcrumb="breadcrumbRoutes" :title="$t('navbar.projects')" class="relative z-10" />
     </SectionsBanner>
     <SectionsAboutUs
       :title="$t('about_us')"
@@ -28,7 +28,7 @@
 const { t } = useI18n();
 const breadcrumbRoutes = ref([
   {
-    title: t('mimar_projects'),
+    title: t('navbar.projects'),
     link: '/projects',
   },
 ]);

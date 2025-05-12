@@ -65,6 +65,7 @@ export default {
         'main-banner-gr': 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) -231.1%, rgba(0, 0, 0, 0.24) 124.2%)',
         'engineer-banner-gr': 'linear-gradient(180deg, #000 -19.19%, rgba(0, 0, 0, 0.00) 50.87%, #000 120.7%)',
         'procurement-banner-gr': 'linear-gradient(180deg, #000 -19.19%, rgba(0, 0, 0, 0.00) 50.87%, #000 106.71%)',
+        'projects-gradient': 'linear-gradient(0deg, rgba(0, 19, 17, 0.32) 0%, rgba(0, 19, 17, 0.32) 100%)',
       },
     },
   },

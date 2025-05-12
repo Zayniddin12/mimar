@@ -32,14 +32,17 @@
           @slide-change="onSlideChange"
         >
           <SwiperSlide v-for="(item, index) in list" :key="index">
-            <NuxtLinkLocale :to="`/projects/${item?.slug}`" class="relative transition-300 cursor-pointer">
+            <NuxtLinkLocale
+              :to="`/projects/${item?.slug}`"
+              class="relative transition-300 cursor-pointer">
+              <div class="w-full md:h-[592px] h-[300px] absolute top-0 left-0 bg-projects-gradient z-10" />
               <img
                 :src="item?.images?.[0]?.lg"
                 alt="slide image"
-                class="w-full md:h-[592px] h-[300px] object-cover"
+                class="w-full md:h-[592px] h-[300px] object-cover z-0"
               >
               <div
-                class="absolute md:bottom-10 bottom-3 md:left-10 left-3 sm:py-4 py-2 sm:px-10 px-4 sm:border-l-[8px] border-l-[4px] border-white"
+                class="absolute md:bottom-10 bottom-3 md:left-10 left-3 sm:py-4 py-2 sm:px-10 px-4 sm:border-l-[8px] border-l-[4px] border-white z-20"
                 style="backdrop-filter: blur(16px); background-color: rgba(255, 255, 255, 0.24);"
               >
                 <p class="text-white">{{ item.title }}</p>

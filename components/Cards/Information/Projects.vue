@@ -24,10 +24,10 @@
         </div>
       </div>
     </div>
-    <p class="mt-6 mb-4 md:text-56 sm:text-4xl text-3xl text-dark-100 font-normal">{{ title }}</p>
-    <div class="bg-gray-200 w-full h-[1px]" />
+    <p class="mt-6 mb-4 md:text-56 sm:text-4xl text-3xl text-dark-100 font-normal !leading-110">{{ title }}</p>
+    <div class="bg-gray-200 w-full h-[1px] mb-6" />
     <div
-      class="mt-6 mb-8 flex flex-col text-gray-300 text-lg leading-130 font-medium"
+      class="v-html"
       v-html="formatRichText(description)" />
     <NuxtLinkLocale :to="`/projects/${slug}`" class="w-full">
       <BaseButton :text="$t('navbar.more')" class="w-full" />
@@ -48,3 +48,93 @@ interface IProps {
 
 defineProps<IProps>();
 </script>
+<style>
+.v-html p {
+  color: #334155 !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: -0.144px;
+}
+
+.v-html h1 {
+  display: none !important;
+}
+
+.v-html table {
+  width: 100% !important;
+
+}
+
+.v-html table tbody td {
+  text-align: center;
+  color: #004741;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  padding-bottom: 8px;
+}
+
+.v-html table tbody td p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 133.333% */
+  letter-spacing: -0.144px;
+  color: #334155;
+}
+
+@media screen and (max-width: 780px) {
+  .v-html h1 {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .v-html table tbody td {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    padding-bottom: 8px;
+  }
+
+  .v-html h1 {
+    color: #004741;
+    margin-bottom: 24px;
+    font-size: 46px;
+    line-height: 56px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .html table tbody td {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 8px;
+  }
+
+  .html h1 {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 46px;
+    margin-top: 20px;
+  }
+
+  .html table tbody {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+  }
+
+  .html table tbody tr {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
+
+</style>
