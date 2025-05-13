@@ -61,7 +61,8 @@
     </Transition>
 
     <SectionsExpertises />
-    <SectionsProjects />
+    <!--    <SectionsProjects />-->
+    <SectionsExampleProjects />
     <SectionsESG />
   </div>
 </template>

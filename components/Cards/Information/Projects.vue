@@ -27,7 +27,7 @@
     <p class="mt-6 mb-4 md:text-56 sm:text-4xl text-3xl text-dark-100 font-normal !leading-110">{{ title }}</p>
     <div class="bg-gray-200 w-full h-[1px] mb-6" />
     <div
-      class="v-html"
+      class="v-html md:!pb-8 pb-4"
       v-html="formatRichText(description)" />
     <NuxtLinkLocale :to="`/projects/${slug}`" class="w-full">
       <BaseButton :text="$t('navbar.more')" class="w-full" />
@@ -75,6 +75,11 @@ defineProps<IProps>();
   font-weight: 400;
   line-height: 130%;
   padding-bottom: 8px;
+}
+
+.v-html table tbody tr {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
 }
 
 .v-html table tbody td p {
