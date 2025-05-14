@@ -26,9 +26,8 @@
           :pagination="false"
           :autoplay="{
                         delay: 3000,
-                        disableOnInteraction: true
                     }"
-          :loop="true"
+          :loop="false"
           class="relative mySwiper"
           @slide-change="onSlideChange($event)"
         >
@@ -101,7 +100,6 @@ const fetchProjects = async () => {
     items.value = isActive.value
       ? products.value.filter(item => item.status === '1')
       : products.value.filter(item => item.status === '0');
-    console.log('products', items.value);
     await nextTick();
     startProgress();
   } catch (err) {
@@ -134,7 +132,8 @@ const startProgress = () => {
   totalProgress.value = 0;
   let elapsed = 0;
   const totalDuration = items.value.length * autoplayDelay;
-
+  console.log(items.value.length);
+  console.log(autoplayDelay);
   timer = setInterval(() => {
     elapsed += intervalTime;
     const progressPercent = Math.min((elapsed / totalDuration) * 100, 100);

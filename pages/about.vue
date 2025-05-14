@@ -1,8 +1,8 @@
 <template>
   <div class="pb-[120px]">
     <SectionsBanner image="/images/about-banner.png" gradient="bg-about-banner-gr">
-      <SectionsStatistics />
-    </SectionsBanner>
+      <SectionsStatistics :is-visible="isVisible">/>
+    </sectionsstatistics></SectionsBanner>
     <CardsAbout />
     <CardsImage image="/images/kara.png" />
     <SectionsOffer />
@@ -14,5 +14,8 @@
 </template>
 
 <script setup lang="ts">
-
+const isVisible=ref(false);
+onMounted(()=>{
+  isVisible.value = true;
+})
 </script>

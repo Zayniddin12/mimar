@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col md:gap-[128px] gap-10 md:pb-[128px] pb-10  overflow-hidden">
-    <div class="relative !min-h-screen">
+    <div class="relative md:!min-h-screen !min-h-[400px]">
 
       <div v-if="!banners?.length" class="bg-main-banner-gr absolute top-0 left-0 w-full h-full z-[5]" />
       <ClientOnly>
@@ -8,7 +8,7 @@
 
         <Swiper
           v-if="banners?.length"
-          class="swiper md:size-screen max-md:!absolute w-full h-full"
+          class="swiper md:size-screen md:!h-screen !h-[400px] max-md:!absolute w-full"
           :settings="settings"
           v-bind="settings"
         >
@@ -17,7 +17,7 @@
             :key="index"
             class="relative md:!w-screen md:!h-screen !h-full !w-full z-1"
           >
-            <SectionsBanner :image="banner?.images?.lg">
+            <SectionsBanner :image="banner?.images?.lg" gradient="bg-main-banner-gr">
               <Transition mode="out-in" name="fade-in">
 
                 <h1
@@ -28,8 +28,8 @@
                   v-else
                   class="flex flex-col"
                 >
-            <span
-              class="block lg:w-[60%]  2xl:h-[128px] lg:h-[100px] md:h-[80px] sm:h-[56px] h-[48px] leading-[96%] gray-shimmer rounded" />
+                        <span
+                          class="block lg:w-[60%]  2xl:h-[128px] lg:h-[100px] md:h-[80px] sm:h-[56px] h-[48px] leading-[96%] gray-shimmer rounded" />
 
                 </div>
               </Transition>

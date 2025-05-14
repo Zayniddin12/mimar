@@ -32,12 +32,14 @@
             </div>
           </div>
 
-          <div class="shrink-0">
+          <div class="md:shrink-0">
             <h2 class="text-white 2xl:text-[48px] lg:text-[40px] text-[32px]">{{ $t('navbar.projects') }}</h2>
 
-            <div class="flex flex-col gap-4 mt-5">
-              <NuxtLink v-for="(item, index) in products" :key="index" :to="`/projects/${item?.slug}`">
-                <p class="text-[#D9D9D9] hover:opacity-70 transition-300">{{ item?.title }}</p>
+            <div class="flex flex-col gap-4 mt-5 w-full">
+              <NuxtLink
+                v-for="(item, index) in products" :key="index" :to="`/projects/${item?.slug}`"
+                class="break-words block">
+                <p class="text-[#D9D9D9] hover:opacity-70 transition-300 ">{{ item?.title }}</p>
               </NuxtLink>
             </div>
           </div>

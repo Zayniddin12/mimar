@@ -46,12 +46,12 @@
         <NuxtLinkLocale to="/esg" class="2xl:max-h-[432px] h-full bg-custom relative  cursor-pointer transition-300">
           <div class="absolute top-0 left-0 w-full bg-custom h-full z-0">
             <video
-              src="/images/gif4.mp4"
+              src="/images/gif8.webm"
               autoplay
               loop
               muted
               playsinline
-              style="mix-blend-mode: color-dodge;     filter: invert(1);"
+              style="mix-blend-mode: color-dodge;"
               class="w-full h-full object-cover absolute top-0 left-0 z-0"
             />
           </div>
@@ -91,17 +91,17 @@
         </NuxtLinkLocale>
 
         <NuxtLinkLocale to="/esg" class="2xl:max-h-[432px] h-full bg-custom relative cursor-pointer transition-300">
-          <div class="absolute top-0 left-0 w-full h-full z-0">
+          <div class="absolute top-0 left-0 w-full h-full z-0 bg-custom">
             <video
-              src="/images/gif4.mp4"
+              src="/images/gif8.webm"
               autoplay
               loop
               muted
               playsinline
-              style="mix-blend-mode: color-dodge;     filter: invert(1);"
+              style="mix-blend-mode: color-dodge;"
               class="w-full h-full object-cover absolute top-0 left-0 z-0"
             />
-          
+
           </div>
           <div
             class="w-full h-full 2xl:p-10 lg:p-5 p-4 flex flex-col justify-between overflow-hidden relative z-10 group">

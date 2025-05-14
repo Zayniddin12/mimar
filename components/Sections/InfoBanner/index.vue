@@ -29,12 +29,12 @@
 
                 </div>
                 <video
-                  src="/images/gif1.mp4"
+                  src="/images/gif8.webm"
                   autoplay
                   loop
                   muted
                   playsinline
-                  style="mix-blend-mode: color-dodge;     filter: invert(1);"
+                  style="mix-blend-mode: color-dodge;"
                   class="w-full h-full object-cover absolute top-0 left-0 z-0"
                 />
               </div>
@@ -94,7 +94,7 @@ const items = [
     text: 'navbar.success_pr',
   },
   {
-    image: '/images/esg1.png',
+    image: '/images/vision10.jpg',
     title: 'navbar.vision',
     desc: 'navbar.vission_desc',
     text: 'navbar.success_pr',

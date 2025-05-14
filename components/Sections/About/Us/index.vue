@@ -8,7 +8,7 @@
         <div class="md:col-span-3">
           <p class="sm:text-20 text-sm text-black leading-150 font-normal">{{ $t('navbar.about_us_desc') }}</p>
           <NuxtLinkLocale v-if="isButton" to="/about">
-            <BaseButton :text="$t('navbar.more')" class="mt-8" />
+            <BaseButton :text="$t('navbar.more')" class="mt-8 max-sm:py-2 max-sm:px-4 max-sm:text-sm" />
           </NuxtLinkLocale>
 
         </div>
