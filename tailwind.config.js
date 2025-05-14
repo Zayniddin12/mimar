@@ -69,6 +69,9 @@ export default {
         'primary-gradient': 'linear-gradient(0deg, #e84487 0%, #eb1c70 100%)',
         'university-single': 'linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), lightgray 50% / cover no-repeat',
       },
+      boxShadow: {
+        'main-card-hover': '0px 12px 60px 0px rgba(0, 0, 0, 0.12);',
+      },
     },
   },
   plugins: [],

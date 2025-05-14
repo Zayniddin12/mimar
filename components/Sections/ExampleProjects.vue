@@ -34,11 +34,15 @@
           <SwiperSlide v-for="(item, index) in items" :key="index">
             <NuxtLinkLocale
               :to="`/projects/${item?.slug}`" class="relative">
-              <img :src="item?.images?.[0]?.lg" alt="slide image" class="w-full md:h-[592px] h-[300px] object-cover">
-              <div
-                class="absolute md:bottom-10 bottom-3 md:left-10 left-3 sm:py-4 py-2 sm:px-10 px-4 sm:border-l-[8px] border-l-[4px] border-white"
-                style="backdrop-filter: blur(16px); background-color: rgba(255, 255, 255, 0.24);">
-                <p class="text-white">{{ item.title }}</p>
+              <img
+:src="item?.images?.[0]?.lg" alt="slide image"
+                   class="w-full md:h-[592px] h-[300px] object-cover z-0">
+              <div class="bg-main-banner-gr size-full absolute top-0 left-0 z-[5]">
+                <div
+                  class="absolute md:bottom-10 bottom-3 md:left-10 left-3 sm:py-4 py-2 sm:px-10 px-4 sm:border-l-[8px] border-l-[4px] border-white z-10"
+                  style="backdrop-filter: blur(16px); background-color: rgba(255, 255, 255, 0.24);">
+                  <p class="text-white">{{ item.title }}</p>
+                </div>
               </div>
             </NuxtLinkLocale>
           </SwiperSlide>
@@ -132,8 +136,6 @@ const startProgress = () => {
   totalProgress.value = 0;
   let elapsed = 0;
   const totalDuration = items.value.length * autoplayDelay;
-  console.log(items.value.length);
-  console.log(autoplayDelay);
   timer = setInterval(() => {
     elapsed += intervalTime;
     const progressPercent = Math.min((elapsed / totalDuration) * 100, 100);

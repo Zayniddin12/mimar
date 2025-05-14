@@ -8,7 +8,6 @@
       :id="1" :images="procurement?.[0]?.images" :title="procurement?.[0]?.title"
       :description="procurement?.[0]?.description" card-style="left-0 md:!bottom-12" class="!pb-0" />
     <CardsInformation
-      :id="2"
       :title="$t('navbar.Logistics')"
       :text="$t('navbar.Supplier_subtittle')"
       image="/images/gif3.mp4"
@@ -18,7 +17,6 @@
       :id="3" :images="procurement?.[1]?.images" :title="procurement?.[1]?.title"
       :description="procurement?.[1]?.description" card-style="left-0 md:!bottom-12" class="!pb-0" />
     <CardsInformation
-      :id="4"
       :title="$t('navbar.Contract')"
       :text="$t('navbar.Contract_subtittle')"
       image="/images/gif4.mp4"

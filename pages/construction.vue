@@ -9,7 +9,6 @@
       :title="constructions?.[0]?.title"
       :description="constructions?.[0]?.description" card-style="right-0 md:!bottom-12" class="!pb-0" />
     <CardsInformation
-      :id="2"
       :title="$t('navbar.Equipment')"
       :text="$t('navbar.Equipment_subtittle')"
       image="/images/gif4.mp4"
@@ -20,7 +19,6 @@
       :title="constructions?.[0]?.title"
       :description="constructions?.[0]?.description" card-style="right-0 md:!bottom-12" class="!pb-0" />
     <CardsInformation
-      :id="4"
       :title="$t('navbar.Safety')"
       :text="$t('navbar.Safety_subtittle')"
       image="/images/gif4.mp4"
