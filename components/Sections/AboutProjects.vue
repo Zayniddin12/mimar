@@ -4,7 +4,7 @@
       <div class="3xl:mb-[48px] 2xl:mb-[36px] lg:mb-[30px] mb-[24px] flex-center-between">
         <h2 class="">{{ $t('navbar.projects') }}</h2>
         <!-- Custom Arrows -->
-        <div class="flex justify-between z-20 px-10 gap-4">
+        <div class="flex justify-between z-20 px-10 gap-4 max-md:hidden">
           <div class="swiper-button-prev1 hover:!bg-custom transition-300 group">
             <i-chevron class="text-dark-200 rotate-90 text-2xl group-hover:text-white transition-300 -ml-1" />
           </div>

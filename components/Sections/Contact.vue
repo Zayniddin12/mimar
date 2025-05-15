@@ -10,23 +10,24 @@
           class="col-span-5 max-[850px]:col-span-1 flex max-sm:flex-col 3xl:gap-[96px] 2xl:gap-[80px] lg:gap-[60px] gap-[40px] 3xl:px-[150px] xl:px-[100px] lg:px-[50px] px-[30px] 3xl:pt-[120px] 2xl:pt-[80px] xl:pt-[60px] lg:pt-[40px] pt-[20px] pb-10">
 
           <div class="lg:min-w-[200px]">
-            <h2 class="text-custom leading-none">{{ $t('navbar.contact_us') }}</h2>
-            <div class="flex sm:flex-col gap-8 sm:mt-[100px] mt-10">
+            <h2 class="text-custom leading-none md:text-56 text-3xl ">{{ $t('navbar.contact_us') }}</h2>
+            <div class="flex sm:flex-col md:gap-8 gap-3 sm:mt-[100px] mt-8">
               <a href="#">
-                <img src="/icons/Facebook.png" alt="Facebook">
+                <img src="/icons/Facebook.png" alt="Facebook" class="max-md:!size-6">
               </a>
               <a href="#">
-                <img src="/icons/Instagram.png" alt="Instagram">
+                <img src="/icons/Instagram.png" alt="Instagram" class="max-md:!size-6">
               </a>
               <a href="#">
-                <img src="/icons/Twitter.png" alt="">
+                <img src="/icons/Twitter.png" alt="" class="max-md:!size-6">
               </a>
             </div>
           </div>
           <div>
-            <p class="text-[#595959]">{{ $t('navbar.contact_subtitle') }} </p>
+            <p class="text-[#595959] md:text-[20px] sm:text-sm text-xs max-sm:mb-2">{{ $t('navbar.contact_subtitle')
+              }} </p>
             <p
-              class="leading-[130%] 2xl:text-[28px] lg:text-[24px] text-[20px] 3xl:mt-[72px] 2xl:mt-[40px] lg:mt-[20px]">
+              class="leading-[130%] 2xl:text-[28px] lg:text-[24px] text-[20px]  3xl:mt-[72px] 2xl:mt-[40px] lg:mt-[20px]">
               {{ $t('navbar.commercial_request') }}</p>
 
             <form @submit.prevent="onSubmit">
@@ -47,7 +48,7 @@
                 </div>
 
                 <div class="flex justify-end pt-8">
-                  <BaseButton :text="$t('navbar.apply')" />
+                  <BaseButton :text="$t('navbar.apply')" class="max-sm:!py-1 max-sm:!px-4 max-sm:text-base" />
                 </div>
               </div>
             </form>

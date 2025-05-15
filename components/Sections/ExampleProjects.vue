@@ -1,15 +1,19 @@
 <template>
   <section>
     <div class="container">
-      <div class="flex justify-between items-center mb-14">
-        <h2 class="3xl:mb-[48px] 2xl:mb-[36px] lg:mb-[30px] mb-[24px]">
+      <div class="flex justify-between max-md:flex-col md:items-center md:mb-14 mb-4">
+        <h2 class="3xl:mb-[48px] 2xl:mb-[36px] lg:mb-[30px] md:mb-[24px] mb-2">
           {{ $t('navbar.projects') }}
         </h2>
 
         <div class="flex p-2 bg-white border border-[#E2E8F0] gap-1">
-          <BaseButton :variant="isActive? 'bg-green':'primary'" :text="$t('navbar.active')" @click="isActive=true" />
           <BaseButton
-            :variant="!isActive? 'bg-green':'primary'" :text="$t('navbar.completed')"
+            :variant="isActive? 'bg-green':'primary'" :text="$t('navbar.active')" class="max-md:w-full max-sm:!py-1"
+            @click="isActive=true" />
+          <BaseButton
+            :variant="!isActive? 'bg-green':'primary'"
+            :text="$t('navbar.completed')"
+            class="max-md:w-full max-sm:!py-1"
             @click="isActive=false" />
         </div>
       </div>
@@ -35,8 +39,8 @@
             <NuxtLinkLocale
               :to="`/projects/${item?.slug}`" class="relative">
               <img
-:src="item?.images?.[0]?.lg" alt="slide image"
-                   class="w-full md:h-[592px] h-[300px] object-cover z-0">
+                :src="item?.images?.[0]?.lg" alt="slide image"
+                class="w-full md:h-[592px] h-[300px] object-cover z-0">
               <div class="bg-main-banner-gr size-full absolute top-0 left-0 z-[5]">
                 <div
                   class="absolute md:bottom-10 bottom-3 md:left-10 left-3 sm:py-4 py-2 sm:px-10 px-4 sm:border-l-[8px] border-l-[4px] border-white z-10"

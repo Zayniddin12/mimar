@@ -6,7 +6,7 @@
     >
       <BaseBreadCrumb :breadcrumb="breadcrumbRoutes" :title="t('navbar.esg')" class="relative z-10" />
     </SectionsBanner>
-    <WrapperExperises :title="t('navbar.ESG')" :description="t('navbar.ESG _subtittle')" />
+    <WrapperExperises :title="t('navbar.ESG')" :description="t('navbar.ESG _subtittle')" class="container" />
     <CardsImage image="/images/esgp1.png" />
     <div class="container">
       <div class="grid lg:grid-cols-3 grid-cols-1 gap-2 mt-10">

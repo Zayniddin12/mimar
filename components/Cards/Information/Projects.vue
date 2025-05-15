@@ -24,13 +24,13 @@
         </div>
       </div>
     </div>
-    <p class="mt-6 mb-4 md:text-56 sm:text-4xl text-3xl text-dark-100 font-normal !leading-110">{{ title }}</p>
+    <p class="mt-6 mb-4 md:text-56 sm:text-4xl text-2xl text-dark-100 font-normal !leading-110">{{ title }}</p>
     <div class="bg-gray-200 w-full h-[1px] mb-6" />
     <div
       class="v-html md:!pb-8 pb-4"
       v-html="formatRichText(description)" />
     <NuxtLinkLocale :to="`/projects/${slug}`" class="w-full">
-      <BaseButton :text="$t('navbar.more')" class="w-full" />
+      <BaseButton :text="$t('navbar.more')" class="w-full max-md:text-sm! max-md:py-2" />
     </NuxtLinkLocale>
   </div>
 </template>
@@ -114,30 +114,42 @@ defineProps<IProps>();
   }
 }
 
-@media screen and (max-width: 640px) {
-  .html table tbody td {
+@media screen and (max-width: 700px) {
+  .v-html p {
+    color: #334155 !important;
+    font-size: 12px;;
+    font-weight: 500;
+  }
+
+  .v-html table tbody td {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
     padding-bottom: 8px;
   }
 
-  .html h1 {
+  .v-html h1 {
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 46px;
     margin-top: 20px;
   }
 
-  .html table tbody {
+  .v-html table tbody {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
     align-items: flex-start;
   }
 
-  .html table tbody tr {
+  .v-html table tbody tr {
     display: flex !important;
     flex-direction: column !important;
+    justify-content: space-between !important;
+    height: 100% !important;
+  }
+
+  .v-html table tbody tr {
+    height: 100% !important;
   }
 }
 
