@@ -2,7 +2,7 @@
   <section>
     <div class="w-full bg-custom">
       <div class="container">
-        <div class="pt-[60px] pb-[68px] flex justify-between flex-wrap">
+        <div class="pt-[60px] pb-[68px] flex justify-between max-lg:gap-3 flex-wrap">
           <div class="shrink-0">
             <h2 class="text-white 2xl:text-[48px] lg:text-[40px] text-[32px]">{{ $t('navbar.about_us') }}</h2>
 

@@ -73,7 +73,7 @@ export default defineNuxtConfig({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: '/logo.jpg',
+          content: '/favicon.png',
         },
         {
           hid: 'og:title',
@@ -89,7 +89,7 @@ export default defineNuxtConfig({
         {
           hid: 'twitter:image',
           property: 'twitter:image',
-          content: '/logo.jpg',
+          content: '/favicon.png',
         },
         {
           hid: 'twitter:image:alt',
@@ -108,7 +108,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:image',
-          content: '/logo.jpg',
+          content: '/favicon.png',
         },
         {
           name: 'description',

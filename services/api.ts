@@ -6,7 +6,7 @@ import { useNuxtApp } from '#app';
 export class ApiService {
   static getBaseUrl() {
     const { $apiBase } = useNuxtApp();
-    return 'https://web.mediaprint.uz/api';
+    return 'https://admin.mimarfzc.com/api';
   }
 
   static async get<T>(url: string, params = {}): Promise<T> {

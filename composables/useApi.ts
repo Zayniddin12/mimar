@@ -35,7 +35,6 @@ export const useApi = (apiUrl?: string) => {
       headers: {
         ...options?.headers,
         'Accept-Language': locale.value || 'en',
-        'Device-Id': visitorId.value,
         ...headers,
       },
     });

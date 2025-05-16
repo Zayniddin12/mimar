@@ -9,11 +9,12 @@ export default {
   theme: {
     container: {
       padding: {
-        DEFAULT: '1rem',       // 640px dan katta ekranlar uchun
+        DEFAULT: '1.5rem',
+        sm: '1rem', // 640px dan katta ekranlar uchun
       },
       screens: {
         DEFAULT: '100%', // width: 100%
-        xl: '1691px',     // max-width: 1659px dan oshmasin
+        xl: '1500px',
       },
     },
     extend: {

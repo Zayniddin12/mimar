@@ -126,8 +126,8 @@ useSeoMeta({
   title: 'MIMAR',
   ogTitle: 'OUR EXPERIENCE IS YOUR SUCCESS',
   twitterTitle: 'OUR EXPERIENCE IS YOUR SUCCESS',
-  ogImage: '/logo.jpg',
-  twitterImage: '/logo.jpg',
+  ogImage: '/favicon.png',
+  twitterImage: '/favicon.png',
 });
 </script>
 <style>
