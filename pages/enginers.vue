@@ -8,13 +8,13 @@
       class="md:my-[104px] my-6" />
     <CardsEngeneer
       :images="engineers?.[0]?.images" card-style="left-0" :title="engineers?.[0]?.title"
-      :description="engineers?.[0]?.description" />
+      :description="engineers?.[0]?.description" :list="engineers?.[0]?.list" />
     <CardsEngeneer
-:images="engineers?.[1]?.images" :title="engineers?.[1]?.title"
-                   :description="engineers?.[1]?.description" card-style="right-0" />
+      :images="engineers?.[1]?.images" :title="engineers?.[1]?.title"
+      :description="engineers?.[1]?.description" card-style="right-0" :list="engineers?.[1]?.list" />
     <CardsEngeneer
-:images="engineers?.[2]?.images" :title="engineers?.[2]?.title"
-                   :description="engineers?.[2]?.description" card-style="left-0" />
+      :images="engineers?.[2]?.images" :title="engineers?.[2]?.title"
+      :description="engineers?.[2]?.description" card-style="left-0" :list="engineers?.[2]?.list" />
   </div>
 </template>
 <script setup lang="ts">

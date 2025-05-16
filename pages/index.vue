@@ -43,12 +43,16 @@
 
     <Transition mode="in-out" name="fade-out">
       <div :key="loading">
-        <LazySectionsAboutUs v-if="!loading" :title="$t('about_us')" :description="$t('about_us_desc')" is-button />
+        <LazySectionsAboutUs
+          v-if="!loading"
+          :title="$t('about_us')"
+          :description="$t('about_us_desc')"
+          is-button />
         <LazySectionsAboutUsLoading v-else is-button />
       </div>
     </Transition>
     <Transition mode="in-out" name="fade-out">
-      <div :key="loading">
+      <div id="services" :key="loading">
         <SectionsWhatWeDo v-if="!loading" />
         <SectionsWhatWeDoLoading v-else />
       </div>

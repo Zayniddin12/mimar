@@ -7,8 +7,8 @@
       <BaseBreadCrumb :breadcrumb="breadcrumbRoutes" :title="$t('navbar.projects')" class="relative z-10" />
     </SectionsBanner>
     <SectionsAboutUs
-      :title="$t('about_us')"
-      :description="$t('about_us_desc')"
+      :title="$t('navbar.how_build')"
+      :description="$t('navbar.how_build_desc')"
       :is-button="false"
       class="md:pt-[96px] pt-10" />
     <div class="container md:!pt-[120px] !pt-10 md:space-y-16 space-y-10">

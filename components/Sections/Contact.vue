@@ -27,7 +27,7 @@
             <p class="text-[#595959] md:text-[20px] sm:text-sm text-xs max-sm:mb-2">{{ $t('navbar.contact_subtitle')
               }} </p>
             <p
-              class="leading-[130%] 2xl:text-[28px] lg:text-[24px] text-[20px]  3xl:mt-[72px] 2xl:mt-[40px] lg:mt-[20px]">
+              class="leading-[130%] 2xl:text-[28px] lg:text-[24px] text-[20px]  3xl:mt-[72px] 2xl:mt-[40px] lg:mt-[20px] mt-2">
               {{ $t('navbar.commercial_request') }}</p>
 
             <form @submit.prevent="onSubmit">

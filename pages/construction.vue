@@ -15,9 +15,9 @@
       image-class="left-0 h-full"
       class="md:!my-[120px] !my-6 container" />
     <CardsEngeneer
-      :images="constructions?.[0]?.images"
-      :title="constructions?.[0]?.title"
-      :description="constructions?.[0]?.description" card-style="right-0 md:!bottom-12" class="!pb-0" />
+      :images="constructions?.[1]?.images"
+      :title="constructions?.[1]?.title"
+      :description="constructions?.[1]?.description" card-style="right-0 md:!bottom-12" class="!pb-0" />
     <CardsInformation
       :title="$t('navbar.Safety')"
       :text="$t('navbar.Safety_subtittle')"

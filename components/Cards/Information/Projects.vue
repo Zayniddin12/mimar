@@ -24,7 +24,8 @@
         </div>
       </div>
     </div>
-    <p class="mt-6 mb-4 md:text-56 sm:text-4xl text-2xl text-dark-100 font-normal !leading-110">{{ title }}</p>
+    <p class="mt-6 mb-4 md:text-56 sm:text-4xl text-2xl text-dark-100 font-alumni font-normal !leading-110">{{ title
+      }}</p>
     <div class="bg-gray-200 w-full h-[1px] mb-6" />
     <div
       class="v-html md:!pb-8 pb-4"
@@ -56,6 +57,7 @@ defineProps<IProps>();
   font-weight: 500;
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.144px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .v-html h1 {
@@ -75,6 +77,7 @@ defineProps<IProps>();
   font-weight: 400;
   line-height: 130%;
   padding-bottom: 8px;
+  font-family: Alumni, sans-serif;
 }
 
 .v-html table tbody tr {
@@ -89,6 +92,7 @@ defineProps<IProps>();
   line-height: 110%; /* 133.333% */
   letter-spacing: -0.144px;
   color: #334155;
+  font-family: Nunito, sans-serif;
 }
 
 @media screen and (max-width: 780px) {

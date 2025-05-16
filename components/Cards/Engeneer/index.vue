@@ -7,6 +7,7 @@
         :title="title"
         :description="description"
         :class="cardStyle"
+        :list="list"
         class="sm:absolute md:-bottom-[72px] -bottom-2 z-10 md:w-fit w-full" />
     </div>
   </div>
@@ -19,6 +20,10 @@ interface IProps {
   cardStyle?: string;
   title: string;
   description: string;
+  list?: {
+    title: string;
+    id: string;
+  }[] | unknown;
 }
 
 defineProps<IProps>();

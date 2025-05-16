@@ -10,10 +10,13 @@
           <div class="max-lg:hidden flex items-center 2xl:gap-[64px] lg:gap-[48px]">
             <template v-for="(item, key) in Links" :key>
               <NuxtLinkLocale
-                v-if="item?.slug!=='contacts'" :to="item?.slug"
+                v-if="item?.slug!=='contacts' && item?.slug!=='services'" :to="item?.slug"
                 class="font-golos text-20 font-medium text-white">{{ $t(item.title) }}
               </NuxtLinkLocale>
-              <a v-else class="font-golos text-20 font-medium text-white" href="#contacts">{{ $t(item.title) }}</a>
+              <a v-else-if="item?.slug=='contacts'" class="font-golos text-20 font-medium text-white" href="#contacts">{{ $t(item.title)
+                }}</a>
+              <a v-else-if="item?.slug=='services'" class="font-golos text-20 font-medium text-white" href="#services">{{ $t(item.title)
+                }}</a>
             </template>
           </div>
           <BaseLanguage />

@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h2 class="3xl:mb-[48px] 2xl:mb-[36px] lg:mb-[30px] mb-[24px] md:text-56 text-3xl">{{ $t('navbar.what_we_do')
+      <h2 class="3xl:mb-[48px] 2xl:mb-[36px] lg:mb-[30px] mb-[24px] md:text-56 text-3xl">{{ $t('navbar.services')
         }}</h2>
 
       <div class="grid lg:grid-cols-3 md:grid-cols-1 gap-2">

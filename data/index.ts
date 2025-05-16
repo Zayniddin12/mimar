@@ -1,5 +1,9 @@
 export const Links = [
   {
+    title: 'navbar.services',
+    slug: 'services',
+  },
+  {
     title: 'navbar.expertises',
     slug: 'expertises',
   },

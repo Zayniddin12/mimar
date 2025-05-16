@@ -22,7 +22,7 @@
           class="sm:size-14 size-10 rounded-full border-custom-200 border bg-custom-300 flex-center text-white font-normal leading-104 sm:text-32 text-xl">
           {{ id }}
         </div>
-        <p v-if="title" class="md:text-64 text-3xl text-white leading-104 text-center">{{ title }}</p>
+        <p v-if="title" class="md:text-64 text-3xl text-white leading-104 text-center font-alumni">{{ title }}</p>
         <p class="text-white font-golos md:text-2xl text-base font-normal leading-130 text-center">
           {{ text }}
         </p>

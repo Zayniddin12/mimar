@@ -1,7 +1,7 @@
 <template>
   <div>
     <p
-      class="min-[1600px]:text-64 min-[1200px]:text-48 text-2xl text-dark leading-130 font-normal mb-14 mt-[128px] text-center">
+      class="lg:text-64 min-[1200px]:text-48 text-2xl font-alumni text-dark leading-130 font-normal mb-14 mt-[128px] text-center">
       {{ $t('navbar.esg_action_title') }}
     </p>
     <div v-if="!isSmallScreen" class="space-y-2">

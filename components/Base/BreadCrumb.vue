@@ -1,6 +1,6 @@
 <template>
   <div class="breadcrumb !text-white  py-2.5 hidden-on-print hidden md:block">
-    <p class="font-normal leading-104 text-96 !text-white mb-1">{{ title }}</p>
+    <p class="font-normal font-alumni leading-104 text-[80px] !text-white md:mb-4 mb-1">{{ title }}</p>
     <div class="flex items-center gap-1.5">
       <NuxtLink
         to="/"

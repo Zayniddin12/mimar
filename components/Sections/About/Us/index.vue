@@ -3,10 +3,13 @@
     <div class="container">
       <div class="grid md:grid-cols-5 gap-2">
         <div class="md:col-span-2">
-          <h2 class="md:text-64 text-48 font-normal leading-130 text-dark">{{ $t('navbar.about_us') }}</h2>
+          <h2 class="md:text-64 text-48 font-normal font-alumni leading-130 text-dark">{{ title || $t('navbar.about_us')
+            }}</h2>
         </div>
         <div class="md:col-span-3">
-          <p class="sm:text-20 text-sm text-black leading-150 font-normal">{{ $t('navbar.about_us_desc') }}</p>
+          <p class="sm:text-20 text-sm text-black leading-150 font-normal font-nunito">
+            {{ description || $t('navbar.about_us_desc')
+            }}</p>
           <NuxtLinkLocale v-if="isButton" to="/about">
             <BaseButton :text="$t('navbar.more')" class="mt-8 max-sm:py-2 max-sm:px-4 max-sm:text-sm" />
           </NuxtLinkLocale>

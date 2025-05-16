@@ -81,16 +81,90 @@ export const engineers = [
     images: '/images/enginer1.png',
     title: 'navbar.Early',
     description: 'navbar.Early_subtittle',
+    list: [
+      {
+        title: 'navbar.early_ul1',
+        id: 1,
+      },
+      {
+        title: 'navbar.early_ul2',
+        id: 2,
+      },
+      {
+        title: 'navbar.early_ul3',
+        id: 3,
+      },
+      {
+        title: 'navbar.early_ul4',
+        id: 4,
+      },
+    ],
   },
   {
     images: '/images/enginer2.png',
     title: 'navbar.Front-End',
     description: 'navbar.Front-End_subtittle',
+    list: [
+      {
+        title: 'navbar.front_ul1',
+        id: 1,
+      },
+      {
+        title: 'navbar.front_ul2',
+        id: 2,
+      },
+      {
+        title: 'navbar.front_ul3',
+        id: 3,
+      },
+      {
+        title: 'navbar.front_ul4',
+        id: 4,
+      },
+      {
+        title: 'navbar.front_ul5',
+        id: 5,
+      },
+      {
+        title: 'navbar.front_ul6',
+        id: 6,
+      },
+      {
+        title: 'navbar.front_ul7',
+        id: 7,
+      },
+      {
+        title: 'navbar.front_ul8',
+        id: 8,
+      },
+    ],
   },
   {
     images: '/images/enginer3.png',
     title: 'navbar.Detailed',
     description: 'navbar.Detailed_subtittle',
+    list: [
+      {
+        title: 'navbar.detailed_ul1',
+        id: 1,
+      },
+      {
+        title: 'navbar.detailed_ul2',
+        id: 2,
+      },
+      {
+        title: 'navbar.detailed_ul3',
+        id: 3,
+      },
+      {
+        title: 'navbar.detailed_ul4',
+        id: 4,
+      },
+      {
+        title: 'navbar.detailed_ul5',
+        id: 5,
+      },
+    ],
   },
 ];
 export const procurement = [
@@ -116,7 +190,7 @@ export const constructions = [
     description: 'navbar.Project_subtittle',
   },
   {
-    images: '/images/construction2.png',
+    images: '/images/construction3.png',
     title: 'navbar.Commissioning',
     description: 'navbar.Commissioning_subtittle',
   },

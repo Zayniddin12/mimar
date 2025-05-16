@@ -46,6 +46,7 @@ export default {
       fontFamily: {
         'alumni': ['Alumni', 'sans-serif'],
         'golos': ['Golos', 'sans-serif'],
+        'nunito': ['Nunito', 'sans-serif'],
       },
       fontSize: {
         20: '20px',

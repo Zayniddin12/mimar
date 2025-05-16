@@ -5,7 +5,7 @@
       style="backdrop-filter: blur(16px);">
       <vue3-autocounter
         v-if="isVisible"
-        class="md:text-[96px] sm:text-56 text-xl leading-[100%] text-white"
+        class="lg:text-[96px] md:text-[60px] sm:text-56 text-xl leading-[100%] text-white"
         :start-amount="0"
         :end-amount="20"
         suffix="+"
@@ -14,14 +14,14 @@
         decimal-separator="."
         :autoinit="true"
       />
-      <p class="text-white leading-[100%] sm:text-20 text-sm">{{ $t('navbar.finished_pr') }}</p>
+      <p class="text-white leading-[100%] sm:text-20 text-sm mt-2">{{ $t('navbar.finished_pr') }}</p>
     </div>
     <div
       class="sm:pt-4 sm:pb-6 sm:px-10 p-2 bg-white/20 backdrop-blur-lg flex flex-col justify-between"
       style="backdrop-filter: blur(16px);">
       <vue3-autocounter
         v-if="isVisible"
-        class="md:text-[96px] sm:text-56 text-xl leading-[100%] text-white"
+        class="lg:text-[96px] md:text-[60px] sm:text-56 text-xl leading-[100%] text-white"
         :start-amount="0"
         :end-amount="100"
         suffix="+"
@@ -37,7 +37,7 @@
       style="backdrop-filter: blur(16px);">
       <vue3-autocounter
         v-if="isVisible"
-        class="md:text-[96px] sm:text-56 text-xl leading-[100%] text-white"
+        class="lg:text-[96px] md:text-[60px] sm:text-56 text-xl leading-[100%] text-white"
         :start-amount="0"
         :end-amount="10"
         suffix="+"

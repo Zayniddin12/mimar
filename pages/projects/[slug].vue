@@ -7,7 +7,8 @@
     <div class="container">
       <!-- Katta asosiy slayd -->
       <swiper
-        :modules="[Thumbs]"
+        :autoplay="{ delay: 2000, disableOnInteraction: false }"
+        :modules="[Thumbs, Autoplay]"
         :thumbs="{ swiper: thumbsSwiper }"
         class="main-swiper !pt-[96px]"
       >
@@ -22,7 +23,8 @@
       <!-- Pastdagi kichik rasmchalar (thumbs) -->
       <swiper
         class="thumbs-swiper mt-4"
-        :modules="[Thumbs, FreeMode]"
+        :modules="[Thumbs, FreeMode, Autoplay]"
+        :autoplay="{ delay: 2000, disableOnInteraction: false }"
         slides-per-view="auto"
         space-between="10"
         watch-slides-progress
@@ -49,7 +51,7 @@
 
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { FreeMode, Thumbs } from 'swiper/modules';
+import { Autoplay, FreeMode, Thumbs } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/thumbs';
@@ -120,6 +122,7 @@ useSeoMeta({
   font-weight: 500;
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.144px;
+  font-family: Nunito, sans-serif;
 }
 
 .html h1 {
@@ -130,6 +133,7 @@ useSeoMeta({
   font-weight: 400;
   line-height: 104px;
   margin-top: 80px;
+  font-family: Alumni, sans-serif;
 }
 
 .html table {
@@ -144,6 +148,7 @@ useSeoMeta({
   font-weight: 400;
   line-height: 72px;
   padding-bottom: 8px;
+  font-family: Alumni, sans-serif;
 }
 
 .html table tbody td p {
@@ -153,6 +158,7 @@ useSeoMeta({
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.144px;
   color: #000;
+  font-family: Nunito, sans-serif;
 }
 
 @media screen and (max-width: 780px) {

@@ -13,6 +13,9 @@
               <NuxtLink to="/about">
                 <p class="text-[#D9D9D9] hover:opacity-70 transition-300">{{ $t('navbar.vision') }}</p>
               </NuxtLink>
+              <NuxtLink to="/about">
+                <p class="text-[#D9D9D9] hover:opacity-70 transition-300">{{ $t('navbar.target') }}</p>
+              </NuxtLink>
             </div>
           </div>
 
