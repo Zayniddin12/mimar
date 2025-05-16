@@ -45,8 +45,6 @@
       <div :key="loading">
         <LazySectionsAboutUs
           v-if="!loading"
-          :title="$t('about_us')"
-          :description="$t('about_us_desc')"
           is-button />
         <LazySectionsAboutUsLoading v-else is-button />
       </div>
