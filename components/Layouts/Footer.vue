@@ -7,15 +7,15 @@
             <h2 class="text-white 2xl:text-[48px] lg:text-[40px] text-[32px]">{{ $t('navbar.about_us') }}</h2>
 
             <div class="flex flex-col gap-4 mt-5">
-              <NuxtLink to="/about">
+              <NuxtLinkLocale to="/about">
                 <p class="text-[#D9D9D9] hover:opacity-70 transition-300">{{ $t('navbar.mission') }}</p>
-              </NuxtLink>
-              <NuxtLink to="/about">
+              </NuxtLinkLocale>
+              <NuxtLinkLocale to="/about">
                 <p class="text-[#D9D9D9] hover:opacity-70 transition-300">{{ $t('navbar.vision') }}</p>
-              </NuxtLink>
-              <NuxtLink to="/about">
+              </NuxtLinkLocale>
+              <NuxtLinkLocale to="/about">
                 <p class="text-[#D9D9D9] hover:opacity-70 transition-300">{{ $t('navbar.target') }}</p>
-              </NuxtLink>
+              </NuxtLinkLocale>
             </div>
           </div>
 
@@ -23,15 +23,15 @@
             <h2 class="text-white 2xl:text-[48px] lg:text-[40px] text-[32px]">{{ $t('navbar.services') }}</h2>
 
             <div class="flex flex-col gap-4 mt-5">
-              <NuxtLink to="/enginers">
+              <NuxtLinkLocale to="/enginers">
                 <p class="text-[#D9D9D9] hover:opacity-70 transition-300">{{ $t('navbar.engineer') }}</p>
-              </NuxtLink>
-              <NuxtLink to="/procurement">
+              </NuxtLinkLocale>
+              <NuxtLinkLocale to="/procurement">
                 <p class="text-[#D9D9D9] hover:opacity-70 transition-300">{{ $t('navbar.procurement') }}</p>
-              </NuxtLink>
-              <NuxtLink to="/construction">
+              </NuxtLinkLocale>
+              <NuxtLinkLocale to="/construction">
                 <p class="text-[#D9D9D9] hover:opacity-70 transition-300">{{ $t('navbar.construction') }}</p>
-              </NuxtLink>
+              </NuxtLinkLocale>
             </div>
           </div>
 
@@ -39,11 +39,11 @@
             <h2 class="text-white 2xl:text-[48px] lg:text-[40px] text-[32px]">{{ $t('navbar.projects') }}</h2>
 
             <div class="flex flex-col gap-4 mt-5 w-full">
-              <NuxtLink
+              <NuxtLinkLocale
                 v-for="(item, index) in products" :key="index" :to="`/projects/${item?.slug}`"
                 class="break-words block">
                 <p class="text-[#D9D9D9] hover:opacity-70 transition-300 ">{{ item?.title }}</p>
-              </NuxtLink>
+              </NuxtLinkLocale>
             </div>
           </div>
 

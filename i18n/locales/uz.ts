@@ -7,7 +7,6 @@ export default async () => {
         'Accept-Language': useCookie('locale').value,
       },
     });
-    console.log(data.json());
     return await data.json();
   } else {
     return {};
