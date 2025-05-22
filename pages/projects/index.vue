@@ -26,6 +26,7 @@
 <script setup lang="ts">
 
 const { t } = useI18n();
+const route = useRoute();
 const breadcrumbRoutes = ref([
   {
     title: t('navbar.projects'),
@@ -36,14 +37,13 @@ const breadcrumbRoutes = ref([
 const products = ref([]);
 const fetchProjects = async () => {
   try {
-    const res = await useApi().$get('/products');
+    const res = await useApi().$get(`/products?status=${route.query.status}`);
     products.value = res?.data;
   } catch (err) {
     console.error('Error fetching projects:', err);
   }
 };
-
-onMounted(() => {
+watch(route, () => {
   fetchProjects();
-});
+}, { immediate: true, deep: true });
 </script>

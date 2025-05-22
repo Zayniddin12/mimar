@@ -71,6 +71,7 @@
 <script setup lang="ts">
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import { onMounted } from 'vue';
 
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import type { IBanners, IResponse } from '~/types';
@@ -78,6 +79,7 @@ import type { IBanners, IResponse } from '~/types';
 
 const loading = ref(true);
 const banners = ref();
+const route = useRoute();
 const settings = {
   pagination: {
     clickable: true,
@@ -123,6 +125,24 @@ onMounted(() => {
     loading.value = false;
   }, 3000);
 });
+
+watch(
+  () => route.hash,
+  async (hash) => {
+    if (hash) {
+      // DOM to‘liq tayyor bo‘lishini kutamiz
+      await nextTick();
+      // va yana biroz kutamiz (components lazy-loaded bo'lishi mumkin)
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // kerak bo‘lsa 200-300 ms ga oshiring
+    }
+  },
+  { immediate: true },
+);
 useSeoMeta({
   title: 'MIMAR',
   ogTitle: 'OUR EXPERIENCE IS YOUR SUCCESS',

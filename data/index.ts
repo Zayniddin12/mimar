@@ -8,10 +8,6 @@ export const Links = [
     slug: 'expertises',
   },
   {
-    title: 'navbar.projects',
-    slug: 'projects',
-  },
-  {
     title: 'navbar.esg',
     slug: 'esg',
   },

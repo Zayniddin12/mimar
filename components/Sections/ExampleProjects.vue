@@ -91,7 +91,6 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Navigation } from 'swiper/modules';
 
 const isActive = ref(true);
-const products = ref([]);
 const swiperRef = ref(null);
 const autoplayDelay = 3000; // 3s
 const intervalTime = 60; // how often to update progress
@@ -102,31 +101,21 @@ const items = ref([]);
 
 const fetchProjects = async () => {
   try {
-    const res = await useApi().$get('/products');
-    products.value = res.data;
-
-    items.value = isActive.value
-      ? products.value.filter(item => item.status === '1')
-      : products.value.filter(item => item.status === '0');
-    await nextTick();
-    startProgress();
+    const res = await useApi().$get(`/products?status=${isActive.value ? 1 : 0}`);
+    items.value = res.data;
   } catch (err) {
     console.error('Error fetching projects:', err);
   }
 };
-watch(isActive, async (newVal) => {
-  console.log(products.value);
-  if (newVal) {
-    items.value = products.value.filter(item => item.status == '1');
+
+watch(isActive, async () => {
+  if (import.meta.client) {
     clearInterval(timer);
-    await nextTick();
-    startProgress();
-  } else {
-    items.value = products.value.filter(item => item.status == '0');
-    clearInterval(timer);
+    await fetchProjects();
     await nextTick();
     startProgress();
   }
+
 
 }, { deep: true });
 onMounted(() => {

@@ -82,8 +82,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 const variants: Record<TButtonVariants, string> = {
   primary:
-    'bg-white text-custom cursor-pointer hover:bg-custom hover:text-white border-custom border overflow-hidden',
-  'bg-green': 'bg-custom text-white cursor-pointer hover:bg-white hover:text-custom border-custom border overflow-hidden',
+    'bg-white text-custom cursor-pointer hover:bg-custom/80 hover:border-custom/80 hover:text-white border-custom border overflow-hidden',
+  'bg-green': 'bg-custom text-white cursor-pointer hover:bg-custom/80  border-custom border overflow-hidden',
   langDropdown: 'bg-transparent text-white text-20 font-normal',
   white: 'bg-white border border-custom-400',
 };
