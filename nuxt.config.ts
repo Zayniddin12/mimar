@@ -63,15 +63,7 @@ export default defineNuxtConfig(async () => {
     sitemap: {
       hostname: 'https://mimarfzc.com',
       gzip: true,
-      exclude: [
-        '/about',
-        '/expertises',
-        '/esg',
-        '/procurement',
-        '/construction',
-        '/enginers',
-        '/projects/**',
-      ],
+      exclude: [],
       defaults: {
         changefreq: 'daily',
         priority: 1,
